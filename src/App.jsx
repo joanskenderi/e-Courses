@@ -1,5 +1,20 @@
+import { ThemeSwitch } from './layout';
+import { useTheme } from './hooks';
+
 const App = () => {
-  return <div>App</div>;
+  const { theme } = useTheme();
+
+  return (
+    <div
+      className={`${
+        theme === 'dark-theme'
+          ? 'bg-slate-900 text-slate-50'
+          : 'bg-slate-text-slate-50 text-slate-900'
+      } min-h-screen flex items-center justify-center`}
+    >
+      <ThemeSwitch />
+    </div>
+  );
 };
 
 export default App;

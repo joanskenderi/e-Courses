@@ -1,25 +1,25 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 
-import { ThemeSwitch } from './layout';
+import { AppRouter } from './router';
+import { Navbar } from './layout';
 import { useTheme } from './hooks';
-import AppRouter from './router/AppRouter';
 
 const App = () => {
   const { theme } = useTheme();
 
   return (
-    <div
-      className={`${
-        theme === 'dark-theme'
-          ? 'bg-slate-900 text-slate-50'
-          : 'bg-slate-text-slate-50 text-slate-900'
-      } min-h-screen flex items-center justify-center`}
-    >
-      <Router>
-        <ThemeSwitch />
+    <Router>
+      <Navbar />
+      <div
+        className={`${
+          theme === 'dark-theme'
+            ? 'bg-slate-900 text-slate-50'
+            : 'bg-slate-text-slate-50 text-slate-900'
+        } min-h-screen flex items-center justify-center`}
+      >
         <AppRouter />
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 };
 

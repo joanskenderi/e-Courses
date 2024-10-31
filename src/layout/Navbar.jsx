@@ -8,7 +8,10 @@ const Navbar = () => {
 
   return (
     <nav className="bg-slate-700 text-slate-50 px-6 py-4 flex items-center justify-between shadow-md">
-      <div className="text-lg font-semibold" onClick={() => navigate('/')}>
+      <div
+        className="text-lg font-semibold cursor-pointer"
+        onClick={() => navigate('/')}
+      >
         e-Courses
       </div>
       <div className="flex items-center space-x-6">

@@ -12,9 +12,9 @@ const App = () => {
       <Navbar />
       <div
         className={`${
-          theme === 'dark-theme'
+          theme === 'dark'
             ? 'bg-slate-900 text-slate-50'
-            : 'bg-slate-text-slate-50 text-slate-900'
+            : 'bg-slate-50 text-slate-900'
         } min-h-screen flex items-center justify-center`}
       >
         <AppRouter />

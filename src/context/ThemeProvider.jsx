@@ -6,8 +6,8 @@ const getTheme = () => {
   const theme = localStorage.getItem('theme');
 
   if (!theme) {
-    localStorage.setItem('theme', 'dark-theme');
-    return 'dark-theme';
+    localStorage.setItem('theme', 'dark');
+    return 'dark';
   } else {
     return theme;
   }
@@ -25,10 +25,10 @@ const ThemeProvider = ({ children }) => {
   }, [theme]);
 
   const toggleTheme = () => {
-    if (theme === 'dark-theme') {
-      setTheme('light-theme');
+    if (theme === 'dark') {
+      setTheme('light');
     } else {
-      setTheme('dark-theme');
+      setTheme('dark');
     }
   };
 

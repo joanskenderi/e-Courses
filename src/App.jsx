@@ -1,4 +1,6 @@
 import { BrowserRouter as Router } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import { AppRouter } from './router';
 import { Navbar } from './layout';
@@ -9,6 +11,13 @@ const App = () => {
 
   return (
     <Router>
+      <ToastContainer
+        style={{
+          position: 'top-right',
+          autoClose: 1500,
+          hideProgressBar: false,
+        }}
+      />
       <Navbar />
       <div
         className={`${

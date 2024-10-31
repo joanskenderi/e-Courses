@@ -1,10 +1,9 @@
 import { Link } from 'react-router-dom';
 
 import CardAction from './CardAction';
-
 import { useTheme } from '../hooks';
 
-const CardDetails = ({ image, name, description, price, id, onAddToCart }) => {
+const CardDetails = ({ image, name, description, price, id }) => {
   const { theme } = useTheme();
 
   return (
@@ -41,7 +40,7 @@ const CardDetails = ({ image, name, description, price, id, onAddToCart }) => {
           </div>
         </div>
       </Link>
-      <CardAction onAddToCart={onAddToCart} />
+      <CardAction item={{ image, name, description, price, id }} />
     </div>
   );
 };

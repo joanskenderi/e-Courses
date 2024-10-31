@@ -1,5 +1,8 @@
+import { BrowserRouter as Router } from 'react-router-dom';
+
 import { ThemeSwitch } from './layout';
 import { useTheme } from './hooks';
+import AppRouter from './router/AppRouter';
 
 const App = () => {
   const { theme } = useTheme();
@@ -12,7 +15,10 @@ const App = () => {
           : 'bg-slate-text-slate-50 text-slate-900'
       } min-h-screen flex items-center justify-center`}
     >
-      <ThemeSwitch />
+      <Router>
+        <ThemeSwitch />
+        <AppRouter />
+      </Router>
     </div>
   );
 };

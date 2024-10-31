@@ -1,5 +1,6 @@
 const products = [
   {
+    id: 1,
     name: 'React Fundamentals',
     imageSrc: 'https://example.com/images/react-fundamentals.jpg',
     description:
@@ -7,6 +8,7 @@ const products = [
     price: 99.99,
   },
   {
+    id: 2,
     name: 'Vue.js Essentials',
     imageSrc: 'https://example.com/images/vue-essentials.jpg',
     description:
@@ -14,6 +16,7 @@ const products = [
     price: 89.99,
   },
   {
+    id: 3,
     name: 'Angular from Scratch',
     imageSrc: 'https://example.com/images/angular-from-scratch.jpg',
     description:
@@ -21,6 +24,7 @@ const products = [
     price: 109.99,
   },
   {
+    id: 4,
     name: 'Svelte for Beginners',
     imageSrc: 'https://example.com/images/svelte-beginners.jpg',
     description:
@@ -28,6 +32,7 @@ const products = [
     price: 79.99,
   },
   {
+    id: 5,
     name: 'Next.js with React',
     imageSrc: 'https://example.com/images/nextjs-react.jpg',
     description:
@@ -35,6 +40,7 @@ const products = [
     price: 119.99,
   },
   {
+    id: 6,
     name: 'Nuxt.js and Vue',
     imageSrc: 'https://example.com/images/nuxt-vue.jpg',
     description:
@@ -42,6 +48,7 @@ const products = [
     price: 99.99,
   },
   {
+    id: 7,
     name: 'Ember.js Bootcamp',
     imageSrc: 'https://example.com/images/ember-bootcamp.jpg',
     description:
@@ -49,6 +56,7 @@ const products = [
     price: 89.99,
   },
   {
+    id: 8,
     name: 'Express and Node.js',
     imageSrc: 'https://example.com/images/express-node.jpg',
     description:
@@ -56,6 +64,7 @@ const products = [
     price: 69.99,
   },
   {
+    id: 9,
     name: 'Meteor.js for Full-Stack Development',
     imageSrc: 'https://example.com/images/meteor-fullstack.jpg',
     description:
@@ -63,6 +72,7 @@ const products = [
     price: 109.99,
   },
   {
+    id: 10,
     name: 'Backbone.js Basics',
     imageSrc: 'https://example.com/images/backbone-basics.jpg',
     description:
